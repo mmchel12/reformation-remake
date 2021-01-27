@@ -1,0 +1,207 @@
+.headline{
+    padding-top: 25px;
+    margin-bottom: 50px;
+}
+
+.headline p, .headline a{
+    text-align: center;
+    padding: 0 30px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.content{
+    display: grid;
+    grid-column: 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 50px 0;
+}
+
+.mainwrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.promoimg{
+    width: 100%
+}
+
+.promotext{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.bigtext{
+    font-size: 27px;
+    margin: 0;
+    font-family: "HKGroteskBold", sans-serif;
+}
+
+.smalltext{
+    margin: 0;
+    line-height: 2;
+}
+
+.tops p{
+    color: #000;
+}
+
+.scrollwrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.scrollone{
+    margin-bottom: -20px;
+}
+
+.scroll{
+    padding: 0 15px;
+    width: 210%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0.9375rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex: 0 0 auto;
+    padding-bottom: 15px;
+}
+
+.new{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 280%;
+    padding-bottom: 40px;
+}
+
+.scrollimg{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.scrolltext{
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.5px;
+
+}
+
+.small{
+    font-size: 12px;
+    letter-spacing: inherit;
+}
+
+
+.divider{
+    width: 90%;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+.motto{
+    font-size: 27px;
+    font-family: "HKGroteskBold", sans-serif;
+    text-align: center;
+    letter-spacing: 0.035em;
+    margin: 50px 30px;
+    padding-top: 7px;
+}
+
+.sustainability{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 15px;
+    margin-bottom: 50px;
+}
+
+.sustainability div{
+    padding-bottom: 15px;
+}
+
+.sustainability img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 760px){
+    
+    .headline{
+        width: 70%;
+        margin: 25px auto 50px;;
+    }
+    
+    .superhero{
+        grid-area: superhero;
+    }
+    
+    .masks{
+        grid-area: masks;
+    }
+
+    .tops{
+        grid-area: tops;
+    }
+
+    .scrollone{
+        grid-area: scrollone;
+    }
+    
+    .dresses{
+        grid-area: dresses;
+    }
+    
+    .scrolltwo{
+        grid-area: scrolltwo;
+        padding-bottom: 25px;
+    }
+    
+    .new{
+        padding-bottom: 100px;
+    }
+    
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "superhero superhero"
+            "masks masks"
+            "tops dresses"
+            "scrollone scrollone"
+            "scrolltwo scrolltwo";    
+    }
+    
+    .scroll{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .scrollwrapper{
+        overflow-x: hidden;
+        margin: 0 20px;
+    }
+    
+    .motto{
+        margin: 50px 60px;
+    }
+    
+    .sustainability{
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .sustainability > div{
+        flex: 1;
+    }
+    
+    .oh-hi{
+        margin-right: 94px;
+    }
+    
+}
