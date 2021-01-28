@@ -1,123 +1,123 @@
 .directory {
-    font-size: 10px;
-    font-family: 'HKGroteskSemibold', sans-serif;
-    margin: 0 15px;
-    height: 25px;
-    display: flex;
-    align-items: center;
+  font-size: 10px;
+  font-family: "HKGroteskSemibold", sans-serif;
+  margin: 0 15px;
+  height: 25px;
+  display: flex;
+  align-items: center;
 }
 
 .browse-nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .browse-btn {
-    flex: 1;
-    padding: 15px;
-    border: 0;
-    background-color: var(--accent);
-    outline: none;
+  flex: 1;
+  padding: 15px;
+  border: 0;
+  background-color: var(--accent);
+  outline: none;
 }
 
-.filter-pop{
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    z-index: 10;
+.filter-pop {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
+  display: none;
 }
 
-.filter-pop > svg{
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 20px;
+.filter-pop > svg {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
 }
 
-
-.filter-pop h2{
-    text-align: center;
-    padding: 35px 15px;
-    margin: 0;
+.filter-pop h2 {
+  text-align: center;
+  padding: 35px 15px;
+  margin: 0;
 }
 
-.filter-pop > div{
-    padding: 0 15px;
+.filter-pop > div {
+  padding: 0 15px;
 }
 
-.filter-type{
-    padding-right: 30px;
-    height: 45px;
-    line-height: 45px;
-    border-top: 1px solid #eeeeee;
+.filter-type {
+  padding-right: 30px;
+  height: 45px;
+  line-height: 45px;
+  border-top: 1px solid #eeeeee;
 }
 
-.filter-type::after{
-    width: 12px;
-    height: 12px;
-    content: '';
-    background-image: url(https://thereformation-weblinc.netdna-ssl.com/assets/workarea/storefront/down-arrow-b9e09677ad3a344104f0c56be728e3c26981ecef4a34c9cf17b6cfc80eebc8a1.svg);
-    background-size: 12px 12px;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 15px;
-    margin-top: 16.5px;
-    padding-right: 4px;
+.filter-type::after {
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-image: url(https://thereformation-weblinc.netdna-ssl.com/assets/workarea/storefront/down-arrow-b9e09677ad3a344104f0c56be728e3c26981ecef4a34c9cf17b6cfc80eebc8a1.svg);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 15px;
+  margin-top: 16.5px;
+  padding-right: 4px;
 }
 
-.filter-type.active::after{
-    transform: rotate(-180deg);
-    transition: ease-in 300ms;
+.filter-type.active::after {
+  transform: rotate(-180deg);
+  transition: ease-in 300ms;
 }
 
 #sort-btn {
-    text-align: center;
-    margin-left: 2px;
-    z-index: 2;
+  text-align: center;
+  margin-left: 2px;
+  z-index: 2;
 }
 
 #sort {
-    position: absolute;
-    right: 0;
-    width: calc(50% - 1px);
-    border: none;
-    outline: none;
-    -webkit-appearance: none;
-    padding: 15px;
-    line-height: inherit;
+  position: absolute;
+  right: 0;
+  width: calc(50% - 1px);
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  padding: 15px;
+  line-height: inherit;
 }
 
-.sort-active{
-    display: block;
+.sort-active {
+  display: block;
 }
 
 h5 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .products-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-    grid-gap: 24px 10px;
-    margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 24px 10px;
+  margin-top: 10px;
 }
 
 .products-grid img {
-    width: 100%;
-    margin-bottom: 10px;
-    display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .products-grid h5 {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .big-promo {
-    grid-column: 1/3;
+  grid-column: 1/3;
 }
